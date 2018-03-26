@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KKU-4D-Vkm"/>
+                        <viewControllerLayoutGuide type="bottom" id="A9Z-rA-vXa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypz-4m-qtL">
+                                <rect key="frame" x="136" y="40" width="103" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="vGH-Vx-pU8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="cancel title">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickCancleTitleBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oxm-gE-f82"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7H-qj-tUY">
+                                <rect key="frame" x="125" y="98" width="124" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="l7Q-S0-0gs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="cancelAction">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickCancelActionBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7KU-Qw-O5f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="la2-dc-5iq">
+                                <rect key="frame" x="133" y="156" width="109" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ANF-8H-4Wj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="cancel sure">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickCancelSureBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ihs-FG-EKd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqW-N0-kZL">
+                                <rect key="frame" x="130.5" y="214" width="114" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.52156862749999999" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JDL-R2-vmh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="multi button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickMultiButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QX7-Bm-Qhr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pqW-N0-kZL" firstAttribute="top" secondItem="la2-dc-5iq" secondAttribute="bottom" constant="8" id="Adn-QX-LPK"/>
+                            <constraint firstItem="b7H-qj-tUY" firstAttribute="top" secondItem="ypz-4m-qtL" secondAttribute="bottom" constant="8" id="DLl-QN-41O"/>
+                            <constraint firstItem="ypz-4m-qtL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dok-zA-aTf"/>
+                            <constraint firstItem="la2-dc-5iq" firstAttribute="top" secondItem="b7H-qj-tUY" secondAttribute="bottom" constant="8" id="JIZ-za-eHZ"/>
+                            <constraint firstItem="ypz-4m-qtL" firstAttribute="top" secondItem="KKU-4D-Vkm" secondAttribute="bottom" constant="20" id="KmG-NI-J0x"/>
+                            <constraint firstItem="la2-dc-5iq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LYj-x2-7Fa"/>
+                            <constraint firstItem="b7H-qj-tUY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OqH-eu-GJf"/>
+                            <constraint firstItem="pqW-N0-kZL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Thb-u1-BNi"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
