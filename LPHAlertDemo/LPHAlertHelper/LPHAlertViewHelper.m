@@ -25,9 +25,9 @@ typedef void(^LPHAlertViewBlock)(NSInteger buttonIndex);
                    cancelTitle:(NSString*_Nullable)cancelTitle
                         rootVC:(UIViewController *_Nullable)rootVC {
     
-    LPHAlertAction *cancelAction = [[LPHAlertAction alloc] initWithTitle:cancelTitle
-                                                                  action:nil
-                                                                isCancel:YES];
+    LPHAlertAction *cancelAction = [LPHAlertAction actionWithTitle:cancelTitle
+                                                            action:nil
+                                                          isCancel:YES];
     [self showOnlyCancelBtnAlert:title
                              msg:msg
                           cancel:cancelAction

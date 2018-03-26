@@ -31,10 +31,10 @@
 
 - (IBAction)clickCancelActionBtnAction:(UIButton *)sender {
     
-    LPHAlertAction *cancelAction = [[LPHAlertAction alloc] initWithTitle:@"确定"
-                                                                  action:^{
-                                                                      NSLog(@"点击了确定按钮");
-                                                                  } isCancel:YES];
+    LPHAlertAction *cancelAction = [LPHAlertAction actionWithTitle:@"确定"
+                                                            action:^{
+                                                                NSLog(@"点击了确定按钮");
+                                                            } isCancel:YES];
     
     [LPHAlertViewHelper showOnlyCancelBtnAlert:@"测试alert标题"
                                            msg:@"测试alert message cancelaction"
@@ -44,15 +44,15 @@
 
 - (IBAction)clickCancelSureBtnAction:(UIButton *)sender {
     
-    LPHAlertAction *cancelAction = [[LPHAlertAction alloc] initWithTitle:@"取消"
-                                                                  action:^{
-                                                                      NSLog(@"点击了取消按钮");
-                                                                  } isCancel:YES];
+    LPHAlertAction *cancelAction = [LPHAlertAction actionWithTitle:@"取消"
+                                                            action:^{
+                                                                NSLog(@"点击了取消按钮");
+                                                            } isCancel:YES];
     
-    LPHAlertAction *sureAction = [[LPHAlertAction alloc] initWithTitle:@"确定"
-                                                                  action:^{
-                                                                      NSLog(@"点击了确定按钮");
-                                                                  }];
+    LPHAlertAction *sureAction = [LPHAlertAction actionWithTitle:@"确定"
+                                                          action:^{
+                                                              NSLog(@"点击了确定按钮");
+                                                          }];
     
     [LPHAlertViewHelper showAlert:@"测试alert标题"
                               msg:@"测试alert cancel sure"
@@ -63,25 +63,25 @@
 
 - (IBAction)clickMultiButtonAction:(UIButton *)sender {
     
-    LPHAlertAction *cancelAction = [[LPHAlertAction alloc] initWithTitle:@"取消"
-                                                                  action:^{
-                                                                      NSLog(@"点击了取消按钮");
-                                                                  } isCancel:YES];
+    LPHAlertAction *cancelAction = [LPHAlertAction actionWithTitle:@"取消"
+                                                            action:^{
+                                                                NSLog(@"点击了取消按钮");
+                                                            } isCancel:YES];
     
-    LPHAlertAction *action1 = [[LPHAlertAction alloc] initWithTitle:@"按钮1"
-                                                                action:^{
-                                                                    NSLog(@"点击了按钮1");
-                                                                }];
+    LPHAlertAction *action1 = [LPHAlertAction actionWithTitle:@"按钮1"
+                                                       action:^{
+                                                           NSLog(@"点击了按钮1");
+                                                       }];
     
-    LPHAlertAction *action2 = [[LPHAlertAction alloc] initWithTitle:@"按钮2"
-                                                             action:^{
-                                                                 NSLog(@"点击了按钮2");
-                                                             }];
+    LPHAlertAction *action2 = [LPHAlertAction actionWithTitle:@"按钮2"
+                                                       action:^{
+                                                           NSLog(@"点击了按钮2");
+                                                       }];
     
-    LPHAlertAction *action3 = [[LPHAlertAction alloc] initWithTitle:@"按钮3"
-                                                             action:^{
-                                                                 NSLog(@"点击了按钮3");
-                                                             }];
+    LPHAlertAction *action3 = [LPHAlertAction actionWithTitle:@"按钮3"
+                                                       action:^{
+                                                           NSLog(@"点击了按钮3");
+                                                       }];
     
     [LPHAlertViewHelper showAlertAtRootVC:nil
                                     title:@"测试alert标题"

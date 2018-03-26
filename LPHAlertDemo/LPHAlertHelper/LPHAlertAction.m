@@ -9,31 +9,34 @@
 
 @implementation LPHAlertAction
 
-- (instancetype)initWithTitle:(NSString *)title {
++ (instancetype _Nullable )actionWithTitle:(NSString *_Nonnull)title {
     
-    return [self initWithTitle:title
-                        action:nil];
+    LPHAlertAction *action = [[LPHAlertAction alloc] init];
+    action.title = title;
+    
+    return action;
 }
 
-- (instancetype)initWithTitle:(NSString *)title
-                       action:(LPHAlertActionHandler)alertAction {
++ (instancetype _Nullable )actionWithTitle:(NSString *_Nonnull)title
+                                    action:(LPHAlertActionHandler _Nullable )alertAction {
     
-    return [self initWithTitle:title
-                        action:alertAction
-                      isCancel:NO];
+    LPHAlertAction *action = [[LPHAlertAction alloc] init];
+    action.title = title;
+    action.actionHandler = alertAction;
+    
+    return action;
 }
 
-- (instancetype)initWithTitle:(NSString *)title
-                       action:(LPHAlertActionHandler)alertAction
-                     isCancel:(BOOL)isCancel {
++ (instancetype _Nullable )actionWithTitle:(NSString *_Nonnull)title
+                                    action:(LPHAlertActionHandler _Nullable )alertAction
+                                  isCancel:(BOOL)isCancel {
     
-    self = [super init];
-    if (self) {
-        _title = title;
-        _actionHandler = alertAction;
-        _isCancel = isCancel;
-    }
-    return self;
+    LPHAlertAction *action = [[LPHAlertAction alloc] init];
+    action.title = title;
+    action.actionHandler = alertAction;
+    action.isCancel = isCancel;
+    
+    return action;
 }
 
 @end

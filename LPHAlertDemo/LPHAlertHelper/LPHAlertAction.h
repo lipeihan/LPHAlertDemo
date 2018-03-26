@@ -16,13 +16,13 @@ typedef void (^LPHAlertActionHandler)();
 
 @property (nonatomic, assign) BOOL isCancel;
 
-- (instancetype _Nullable )initWithTitle:(NSString *_Nonnull)title;
++ (instancetype _Nullable )actionWithTitle:(NSString *_Nonnull)title;
 
-- (instancetype _Nullable )initWithTitle:(NSString *_Nonnull)title
-                       action:(LPHAlertActionHandler _Nullable )alertAction;
++ (instancetype _Nullable )actionWithTitle:(NSString *_Nonnull)title
+                                    action:(LPHAlertActionHandler _Nullable )alertAction;
 
-- (instancetype _Nullable )initWithTitle:(NSString *_Nonnull)title
-                       action:(LPHAlertActionHandler _Nullable )alertAction
-                     isCancel:(BOOL)isCancel;
++ (instancetype _Nullable )actionWithTitle:(NSString *_Nonnull)title
+                                    action:(LPHAlertActionHandler _Nullable )alertAction
+                                  isCancel:(BOOL)isCancel;
 
 @end
